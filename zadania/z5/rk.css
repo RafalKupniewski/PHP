@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+article, aside, details, figcaption, figure, footer, header,
+    hgroup, menu, nav, section {
+  display: block; /*sposób wyświetlania elementu*/
+
+}
+
+header, nav, article, footer {
+  margin: 2px 0px;         /*atrybuty marginesu, 2px - górny i dolny*/
+  border: 1px dotted black; /*atrybuty mieszane obramowania*/
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightgrey;
+}
+
+footer {
+  clear: both; /*przyleganie do elementu, both-żaden bok nie przylega*/
+  background-color: lightblue;
+}
+
+header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightblue;
+  color: blue;
+  text-align: center;
+}
+
+nav {
+  float: left; /*ustawienie w poziomie*/
+  width: 20%;  /*szerokość*/
+  height: auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightyellow;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+  background-color: lightyellow;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+
+  color: red;
+  align-items:flex-start;
+  text-align: center;
+}
+
+input {
+  background-color : lightyellow;
+}
+
+button  {
+  background-color : grey;
+}
+
+video{
+
+}
+
+fieldset {
+  width: 60%;
+  background-color : grey;
+  color: red;
+  align-self: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  float: right;  /*ustawienie w poziomie*/
+  width: 79%;    /*szerokość*/
+  margin: 2px 0; /*atrybuty marginesu*/
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;/*atrybuty marginesu*/
+	width: 90%;    /*szerokość*/
+}
+
+p {
+  margin: 2px; /*atrybuty marginesu*/
+  text-align: center;
+}
+ul {
+  text-align: left;
+}
