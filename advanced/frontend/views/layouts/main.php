@@ -29,20 +29,21 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Słówka',
+        'brandLabel' => 'Strona główna',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
+        ['label' => 'Test', 'url' => ['/podkategoria/index']],
         ['label' => 'Słówka', 'url' => ['/site/index']],
-        ['label' => 'Kategorie', 'url' => ['/site/about']],
+        ['label' => 'Kategorie', 'url' => ['/jezyk/index']],
         ['label' => 'Język', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Student', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => 'Nowy użytkownik', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Zaloguj', 'url' => ['/site/login']];
     } else {
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
